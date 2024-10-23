@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time machine</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function getTimeline(){
+            var date = document.getElementById("year").value;
+            if (document.getElementById("year").checkValidity()) {
+                if(confirm("Are you sure you want to travel to date "+date+" ? There is no going back once you move forward in time.")){
+                    window.location.href = "success.html?date="+date; 
+            }
+            }
+
+        }
+
+    </script>
+  </head>
+  <body>
+    <h1>The first working time machine</h1>
+    <p>This website brings you the first time machine that actually works.
+        Built by a 16T parameters biological neural network trained on hundreds of trillions of tokens,
+        it can transport users through time to almost any desired date desired using an extremely complex 1 million lines javascript script.</p>
+    <p>This comes with one tiny side effect : you will come into a timeline where the whole world, including carbon isotopes, will have united in an observable universe wide conspiracy in making you believe
+        that you are actually still in the past.</p>
+        <p>THIS MACHINE HAS NEVER BEEN PROVEN NOT TO WORK, USE WITH EXTREME CAUTION</p>
+<div>
+    <label for="year">Travel to year</label>
+    <input type="number" id="year" min="2026" step="1"/>
+    <button onclick="getTimeline()">Get to timeline</button>
+</div>
+  </body>
+</html>

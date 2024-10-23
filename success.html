@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Congratulations</h1>
+    <p>You have successfully traveled to the year <span id="date"></span></p>
+    <p>To verify the success of the time leap, ask anybody what year you are in now. 
+      If they answer you with anything else than <span id="date2"></span>, well there it is, the conspiracy at work.</p>
+    <script>
+        document.getElementById("date").innerHTML = window.location.search.split("=")[1];
+        document.getElementById("date2").innerHTML = window.location.search.split("=")[1];
+    </script>
+  </body>
+</html>
